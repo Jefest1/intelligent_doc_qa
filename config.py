@@ -6,3 +6,5 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: str
     LANGCHAIN_API_KEY: str
     model_config = SettingsConfigDict(_env_file='.env')
+
+settings = Settings()
